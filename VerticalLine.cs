@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace STEPSNAKE
 {
-    class Horiaontall_line : Figure
+    class VerticalLine : Figure
     {
         
-         public Horiaontall_line(int xLeft, int xRight, int y, char sym )
+        public VerticalLine(int yUp, int yDown, int x, char sym)
         {
             pList = new List<Point>();
-            for(int x = xLeft; x <= xRight; x++)
+            for (int y = yUp; x <= yDown; y++)
             {
                 Point p = new Point(x, y, sym);
                 pList.Add(p);
             }
         }
 
-      
+        
     }
 }
+
